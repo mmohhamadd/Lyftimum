@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="css/geosearch.css"
+    />
+    <script src="js/geosearch.umd.js"></script>
+    <title>lyftimum</title>
+  </head>
+
+  <body>
+    <!-- <div class="top">
+      <div class="row">
+        <div class="top__arrow col-2">
+          <img
+            id="backArrow"
+            src="./img/back.svg"
+            alt="back-arrow"
+            onclick="backArrow()"
+          />
+        </div>
+        <div class="comming col-8">
+          <p><b>Search Places:</b> Comming Soon...</p>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div> -->
+
+    <div class="base">
+      <div class="container">
+        <div id="baseRow" class="row justify-content-between">
+          <!-- <div class="base__arrow col-1">
+                    <img src="./img/ico.svg" alt="up-arrow" />
+                </div> -->
+          <div class="base__place col-9">
+            <h5 id="description">Choose your origin and destination</h5>
+          </div>
+          <div class="base__accept col-3">
+            <button
+              id="acceptButton"
+              class="btn__accept"
+              onclick="acceptButtonClicked()"
+            >
+              Accept
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mapid"></div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
